@@ -9,14 +9,14 @@ const AddTask = () => {
 
     const status = 0;
 
-    console.log(currentDate);
-    console.log(currentTime);
+    // console.log(currentDate);
+    // console.log(currentTime);
 
     const handleSubmit = event => {
         event.preventDefault();
         const addItem = {
 
-            decription: event.target.description.value,
+            description: event.target.description.value,
             time: currentTime,
             date: currentDate,
             taskStatus: status
@@ -35,14 +35,17 @@ const AddTask = () => {
 
 
     return (
-        <div className='flex justify-center'>
-            <div className="form-control">
-                <div className="input-group">
-                    <form className='d-flex flex-column' onSubmit={handleSubmit}>
-                        <input className='input input-bordered' placeholder='Task Description' name='description' />
+        <div>
+            <h3 className='text-center py-3 text-xl font-bold text-grey'>Add New Task</h3>
+            <div className='flex justify-center'>
+                <div className="form-control">
+                    <div className="input-group">
+                        <form className='d-flex flex-column' onSubmit={handleSubmit}>
+                            <input className='input input-bordered' placeholder='Task Description' name='description' />
 
-                        <input className='btn btn-primary' type="submit" value="Add" />
-                    </form>
+                            <input className='btn btn-primary' type="submit" value="Add" />
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
