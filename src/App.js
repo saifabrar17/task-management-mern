@@ -12,15 +12,17 @@ function App() {
     <div className="">
       <Navbar></Navbar>
 
-      <Routes>
-        <Route path='/' element={<Home></Home>}></Route>
-        <Route path='/addNewTask' element={<AddTask></AddTask>}></Route>
-        <Route path='/completedTask' element={<CompletedTask></CompletedTask>}></Route>
-        <Route path='/todo' element={<ToDo></ToDo>}></Route>
-        <Route path='*' element={<NotFOund></NotFOund>}></Route>
-      </Routes>
+      <div className="min-h-[80vh]">
+        <Routes>
+          <Route path='/' element={<Home></Home>}></Route>
+          <Route path='/addNewTask' element={<AddTask></AddTask>}></Route>
+          <Route path='/completedTask' element={<CompletedTask></CompletedTask>}></Route>
+          <Route path='/todo' element={<ToDo></ToDo>}></Route>
+          <Route path='*' element={<NotFOund></NotFOund>}></Route>
+        </Routes>
+      </div>
 
-<Footer></Footer>
+      <Footer></Footer>
     </div>
   );
 }
