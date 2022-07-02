@@ -22,7 +22,7 @@ const AddTask = () => {
             taskStatus: status
 
         }
-        axios.post('http://localhost:5000/allTasks', addItem)
+        axios.post('https://metric-inukshuk-31974.herokuapp.com/allTasks', addItem)
             .then(response => {
                 const { data } = response;
                 if (data.insertedId) {

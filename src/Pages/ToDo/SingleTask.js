@@ -5,7 +5,7 @@ const SingleTask = ({ singleTask, index }) => {
 
 
     const handleComplete = () => {
-        fetch('http://localhost:5000/complete', {
+        fetch('https://metric-inukshuk-31974.herokuapp.com/complete', {
             method: "PUT",
             headers: {
                 'content-type': 'application/json',

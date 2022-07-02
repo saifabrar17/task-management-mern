@@ -6,7 +6,7 @@ const ToDo = () => {
     const [allTasks, setAllTasks] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/allTasks')
+        fetch('https://metric-inukshuk-31974.herokuapp.com/allTasks')
             .then(res => res.json())
             .then(data => setAllTasks(data));
     }, [])

@@ -6,7 +6,7 @@ const CompletedTask = () => {
     const [allTasks, setAllTasks] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:5000/completedTasks')
+        axios.get('https://metric-inukshuk-31974.herokuapp.com/completedTasks')
             .then(res => {
                 console.log(res.data);
                 setAllTasks(res.data);
